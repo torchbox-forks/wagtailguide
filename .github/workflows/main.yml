@@ -50,13 +50,13 @@ jobs:
           python -m pip install tox tox-gh-actions
       - name: Test with tox
         run: tox
-  
+
   coverage:
     name: 🧪 Coverage
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8"]
+        python-version: ["3.9"]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
