@@ -27,4 +27,7 @@ setup(
     install_requires=[
         "wagtail>=4.1",
     ],
+    extras_require={
+        "testing": ["tox"],
+    },
 )
